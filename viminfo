@@ -18,7 +18,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1663206758,,"wq"
+|2,0,1663207081,,"wq"
 :w
 |2,0,1663206756,,"w"
 :q
@@ -104,30 +104,50 @@ $
 |3,1,36,0,1,0,1663205936,"${fg[bright_white]}'"
 
 # File marks:
-'0  128  6  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
-|4,48,128,6,1663206758,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
-'1  52  0  ~/.zsh/.zshrc
-|4,49,52,0,1663205980,"~/.zsh/.zshrc"
-'2  53  28  ~/.zsh/.zshrc
-|4,50,53,28,1663205850,"~/.zsh/.zshrc"
+'0  99  0  ~/.vim/.gitignore
+|4,48,99,0,1663207081,"~/.vim/.gitignore"
+'1  128  6  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,49,128,6,1663206758,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+'2  52  0  ~/.zsh/.zshrc
+|4,50,52,0,1663205980,"~/.zsh/.zshrc"
 '3  53  28  ~/.zsh/.zshrc
 |4,51,53,28,1663205850,"~/.zsh/.zshrc"
-'4  52  77  ~/.zsh/.zshrc
-|4,52,52,77,1663205705,"~/.zsh/.zshrc"
+'4  53  28  ~/.zsh/.zshrc
+|4,52,53,28,1663205850,"~/.zsh/.zshrc"
 '5  52  77  ~/.zsh/.zshrc
 |4,53,52,77,1663205705,"~/.zsh/.zshrc"
 '6  52  77  ~/.zsh/.zshrc
 |4,54,52,77,1663205705,"~/.zsh/.zshrc"
-'7  70  0  ~/.zsh/.zshrc
-|4,55,70,0,1663205619,"~/.zsh/.zshrc"
+'7  52  77  ~/.zsh/.zshrc
+|4,55,52,77,1663205705,"~/.zsh/.zshrc"
 '8  70  0  ~/.zsh/.zshrc
 |4,56,70,0,1663205619,"~/.zsh/.zshrc"
-'9  69  0  ~/.zsh/.zshrc
-|4,57,69,0,1663205619,"~/.zsh/.zshrc"
+'9  70  0  ~/.zsh/.zshrc
+|4,57,70,0,1663205619,"~/.zsh/.zshrc"
 
 # Jumplist (newest first):
+-'  99  0  ~/.vim/.gitignore
+|4,39,99,0,1663207081,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1663207009,"~/.vim/.gitignore"
 -'  128  6  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
 |4,39,128,6,1663206758,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  128  6  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,128,6,1663206758,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  133  49  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,133,49,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  123  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,123,0,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  116  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,116,0,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  92  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,92,0,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  75  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,75,0,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  71  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,71,0,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  64  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,64,0,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
 -'  133  49  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
 |4,39,133,49,1663206130,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
 -'  123  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
@@ -152,16 +172,56 @@ $
 |4,39,12,0,1663206129,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
 -'  4  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
 |4,39,4,0,1663206129,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  59  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,59,0,1663206129,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  48  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,48,0,1663206129,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  39  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,39,0,1663206129,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  12  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,12,0,1663206129,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  4  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,4,0,1663206129,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
+-'  1  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
+|4,39,1,0,1663206126,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
 -'  1  0  ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
 |4,39,1,0,1663206126,"~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt"
 -'  52  0  ~/.zsh/.zshrc
 |4,39,52,0,1663205980,"~/.zsh/.zshrc"
 -'  52  0  ~/.zsh/.zshrc
 |4,39,52,0,1663205980,"~/.zsh/.zshrc"
+-'  52  0  ~/.zsh/.zshrc
+|4,39,52,0,1663205980,"~/.zsh/.zshrc"
+-'  52  0  ~/.zsh/.zshrc
+|4,39,52,0,1663205980,"~/.zsh/.zshrc"
 -'  53  30  ~/.zsh/.zshrc
 |4,39,53,30,1663205891,"~/.zsh/.zshrc"
 -'  53  30  ~/.zsh/.zshrc
 |4,39,53,30,1663205891,"~/.zsh/.zshrc"
+-'  53  30  ~/.zsh/.zshrc
+|4,39,53,30,1663205891,"~/.zsh/.zshrc"
+-'  53  30  ~/.zsh/.zshrc
+|4,39,53,30,1663205891,"~/.zsh/.zshrc"
+-'  70  10  ~/.zsh/.zshrc
+|4,39,70,10,1663205875,"~/.zsh/.zshrc"
+-'  55  0  ~/.zsh/.zshrc
+|4,39,55,0,1663205875,"~/.zsh/.zshrc"
+-'  50  0  ~/.zsh/.zshrc
+|4,39,50,0,1663205875,"~/.zsh/.zshrc"
+-'  42  0  ~/.zsh/.zshrc
+|4,39,42,0,1663205875,"~/.zsh/.zshrc"
+-'  39  0  ~/.zsh/.zshrc
+|4,39,39,0,1663205875,"~/.zsh/.zshrc"
+-'  70  10  ~/.zsh/.zshrc
+|4,39,70,10,1663205875,"~/.zsh/.zshrc"
+-'  55  0  ~/.zsh/.zshrc
+|4,39,55,0,1663205875,"~/.zsh/.zshrc"
+-'  50  0  ~/.zsh/.zshrc
+|4,39,50,0,1663205875,"~/.zsh/.zshrc"
+-'  42  0  ~/.zsh/.zshrc
+|4,39,42,0,1663205875,"~/.zsh/.zshrc"
+-'  39  0  ~/.zsh/.zshrc
+|4,39,39,0,1663205875,"~/.zsh/.zshrc"
 -'  70  10  ~/.zsh/.zshrc
 |4,39,70,10,1663205875,"~/.zsh/.zshrc"
 -'  55  0  ~/.zsh/.zshrc
@@ -206,6 +266,34 @@ $
 |4,39,14,0,1663205874,"~/.zsh/.zshrc"
 -'  3  0  ~/.zsh/.zshrc
 |4,39,3,0,1663205874,"~/.zsh/.zshrc"
+-'  34  0  ~/.zsh/.zshrc
+|4,39,34,0,1663205874,"~/.zsh/.zshrc"
+-'  30  0  ~/.zsh/.zshrc
+|4,39,30,0,1663205874,"~/.zsh/.zshrc"
+-'  27  0  ~/.zsh/.zshrc
+|4,39,27,0,1663205874,"~/.zsh/.zshrc"
+-'  24  0  ~/.zsh/.zshrc
+|4,39,24,0,1663205874,"~/.zsh/.zshrc"
+-'  14  0  ~/.zsh/.zshrc
+|4,39,14,0,1663205874,"~/.zsh/.zshrc"
+-'  3  0  ~/.zsh/.zshrc
+|4,39,3,0,1663205874,"~/.zsh/.zshrc"
+-'  34  0  ~/.zsh/.zshrc
+|4,39,34,0,1663205874,"~/.zsh/.zshrc"
+-'  30  0  ~/.zsh/.zshrc
+|4,39,30,0,1663205874,"~/.zsh/.zshrc"
+-'  27  0  ~/.zsh/.zshrc
+|4,39,27,0,1663205874,"~/.zsh/.zshrc"
+-'  24  0  ~/.zsh/.zshrc
+|4,39,24,0,1663205874,"~/.zsh/.zshrc"
+-'  14  0  ~/.zsh/.zshrc
+|4,39,14,0,1663205874,"~/.zsh/.zshrc"
+-'  3  0  ~/.zsh/.zshrc
+|4,39,3,0,1663205874,"~/.zsh/.zshrc"
+-'  1  0  ~/.zsh/.zshrc
+|4,39,1,0,1663205873,"~/.zsh/.zshrc"
+-'  1  0  ~/.zsh/.zshrc
+|4,39,1,0,1663205873,"~/.zsh/.zshrc"
 -'  1  0  ~/.zsh/.zshrc
 |4,39,1,0,1663205873,"~/.zsh/.zshrc"
 -'  1  0  ~/.zsh/.zshrc
@@ -214,6 +302,14 @@ $
 |4,39,53,28,1663205850,"~/.zsh/.zshrc"
 -'  53  28  ~/.zsh/.zshrc
 |4,39,53,28,1663205850,"~/.zsh/.zshrc"
+-'  53  28  ~/.zsh/.zshrc
+|4,39,53,28,1663205850,"~/.zsh/.zshrc"
+-'  53  28  ~/.zsh/.zshrc
+|4,39,53,28,1663205850,"~/.zsh/.zshrc"
+-'  52  12  ~/.zsh/.zshrc
+|4,39,52,12,1663205768,"~/.zsh/.zshrc"
+-'  52  12  ~/.zsh/.zshrc
+|4,39,52,12,1663205768,"~/.zsh/.zshrc"
 -'  52  12  ~/.zsh/.zshrc
 |4,39,52,12,1663205768,"~/.zsh/.zshrc"
 -'  52  12  ~/.zsh/.zshrc
@@ -230,104 +326,15 @@ $
 |4,39,34,0,1663205733,"~/.zsh/.zshrc"
 -'  30  0  ~/.zsh/.zshrc
 |4,39,30,0,1663205733,"~/.zsh/.zshrc"
--'  27  0  ~/.zsh/.zshrc
-|4,39,27,0,1663205733,"~/.zsh/.zshrc"
--'  24  0  ~/.zsh/.zshrc
-|4,39,24,0,1663205733,"~/.zsh/.zshrc"
--'  55  0  ~/.zsh/.zshrc
-|4,39,55,0,1663205733,"~/.zsh/.zshrc"
--'  50  0  ~/.zsh/.zshrc
-|4,39,50,0,1663205733,"~/.zsh/.zshrc"
--'  42  0  ~/.zsh/.zshrc
-|4,39,42,0,1663205733,"~/.zsh/.zshrc"
--'  39  0  ~/.zsh/.zshrc
-|4,39,39,0,1663205733,"~/.zsh/.zshrc"
--'  34  0  ~/.zsh/.zshrc
-|4,39,34,0,1663205733,"~/.zsh/.zshrc"
--'  30  0  ~/.zsh/.zshrc
-|4,39,30,0,1663205733,"~/.zsh/.zshrc"
--'  27  0  ~/.zsh/.zshrc
-|4,39,27,0,1663205733,"~/.zsh/.zshrc"
--'  24  0  ~/.zsh/.zshrc
-|4,39,24,0,1663205733,"~/.zsh/.zshrc"
--'  4  0  ~/.zsh/.zshrc
-|4,39,4,0,1663205732,"~/.zsh/.zshrc"
--'  14  0  ~/.zsh/.zshrc
-|4,39,14,0,1663205732,"~/.zsh/.zshrc"
--'  4  0  ~/.zsh/.zshrc
-|4,39,4,0,1663205732,"~/.zsh/.zshrc"
--'  4  0  ~/.zsh/.zshrc
-|4,39,4,0,1663205732,"~/.zsh/.zshrc"
--'  14  0  ~/.zsh/.zshrc
-|4,39,14,0,1663205732,"~/.zsh/.zshrc"
--'  4  0  ~/.zsh/.zshrc
-|4,39,4,0,1663205732,"~/.zsh/.zshrc"
--'  1  0  ~/.zsh/.zshrc
-|4,39,1,0,1663205731,"~/.zsh/.zshrc"
--'  1  0  ~/.zsh/.zshrc
-|4,39,1,0,1663205731,"~/.zsh/.zshrc"
--'  52  77  ~/.zsh/.zshrc
-|4,39,52,77,1663205705,"~/.zsh/.zshrc"
--'  52  77  ~/.zsh/.zshrc
-|4,39,52,77,1663205705,"~/.zsh/.zshrc"
--'  34  0  ~/.zsh/.zshrc
-|4,39,34,0,1663205665,"~/.zsh/.zshrc"
--'  30  0  ~/.zsh/.zshrc
-|4,39,30,0,1663205665,"~/.zsh/.zshrc"
--'  34  0  ~/.zsh/.zshrc
-|4,39,34,0,1663205665,"~/.zsh/.zshrc"
--'  30  0  ~/.zsh/.zshrc
-|4,39,30,0,1663205665,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205664,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205664,"~/.zsh/.zshrc"
--'  27  0  ~/.zsh/.zshrc
-|4,39,27,0,1663205664,"~/.zsh/.zshrc"
--'  24  0  ~/.zsh/.zshrc
-|4,39,24,0,1663205664,"~/.zsh/.zshrc"
--'  14  0  ~/.zsh/.zshrc
-|4,39,14,0,1663205664,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205664,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205664,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205664,"~/.zsh/.zshrc"
--'  27  0  ~/.zsh/.zshrc
-|4,39,27,0,1663205664,"~/.zsh/.zshrc"
--'  24  0  ~/.zsh/.zshrc
-|4,39,24,0,1663205664,"~/.zsh/.zshrc"
--'  14  0  ~/.zsh/.zshrc
-|4,39,14,0,1663205664,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205664,"~/.zsh/.zshrc"
--'  1  0  ~/.zsh/.zshrc
-|4,39,1,0,1663205663,"~/.zsh/.zshrc"
--'  1  0  ~/.zsh/.zshrc
-|4,39,1,0,1663205663,"~/.zsh/.zshrc"
--'  69  0  ~/.zsh/.zshrc
-|4,39,69,0,1663205619,"~/.zsh/.zshrc"
--'  70  0  ~/.zsh/.zshrc
-|4,39,70,0,1663205619,"~/.zsh/.zshrc"
--'  69  0  ~/.zsh/.zshrc
-|4,39,69,0,1663205619,"~/.zsh/.zshrc"
--'  69  0  ~/.zsh/.zshrc
-|4,39,69,0,1663205619,"~/.zsh/.zshrc"
--'  69  0  ~/.zsh/.zshrc
-|4,39,69,0,1663205619,"~/.zsh/.zshrc"
--'  70  0  ~/.zsh/.zshrc
-|4,39,70,0,1663205619,"~/.zsh/.zshrc"
--'  69  0  ~/.zsh/.zshrc
-|4,39,69,0,1663205619,"~/.zsh/.zshrc"
--'  69  0  ~/.zsh/.zshrc
-|4,39,69,0,1663205619,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205551,"~/.zsh/.zshrc"
--'  7  0  ~/.zsh/.zshrc
-|4,39,7,0,1663205551,"~/.zsh/.zshrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/.gitignore
+	*	1663207080	0
+	"	99	0
+	^	99	0
+	.	98	80
+	+	98	80
 
 > ~/Dropbox/Mac/Documents/Files/vim_cheatsheet.txt
 	*	1663206757	0
