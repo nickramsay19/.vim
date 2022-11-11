@@ -7,9 +7,8 @@ syntax on
 set termguicolors
 
 " --- FILETYPES ---
-filetype on
-filetype plugin on
-filetype indent on
+" enable ftplugin and filetype indent scripts
+filetype indent plugin on
 " autocompletion
 set wildmenu
 " disable automatic comment line continuation
@@ -45,7 +44,7 @@ set viminfo+=n~/.vim/viminfo
 " disable .netrwhist
 let g:netrw_dirhistmax = 0
 
-" --- BINDS ---
+" --- KEYMAPS ---
 " replace o and O with add lines without insert (since I like to add multiple lines before I insert)
 noremap o o<Esc>
 noremap O O<Esc>
@@ -86,89 +85,32 @@ noremap K {
 noremap H ^
 noremap L $
 
+" --- SPELL CHECKING ---
+" set language here
+let s:SPELLLANG = "en_au"
+" create a function to reduce repetition
+function s:ConfigureTextualFile()
+	"  enable spellchecking for this file
+	execute "set spell spelllang=" . s:SPELLLANG
+	" remap k and j to move down buffer lines not file lines
+	noremap <buffer> <silent> k gk
+	noremap <buffer> <silent> j gj
+endfunction
+" now run this function for any textual files
+autocmd FileType text call s:ConfigureTextualFile()
+autocmd FileType markdown call s:ConfigureTextualFile()
+
+
 " --- PLUGIN SETTINGS ---
 " disable plugins
-let g:loaded_airline = 1
 let g:loaded_youcompleteme = 1
 let g:tabular_loaded = 1
-let loaded_supertab = 1
+let g:loaded_supertab = 1
 " - vim-easy-align
 " Align table with tab
 au FileType markdown vmap <tab> :EasyAlign*<Bar><Enter>
 " For normal mode press bar '|'
 au FileType markdown map <Bar> vip :EasyAlign*<Bar><Enter>
+" - vim-airline
+packadd! vim-airline
 
-" --- STATUSLINE ---
-" Clear status line when vimrc is reloaded.
-set statusline=
-" Status line left side.
-set statusline+=\ %F\ %M\ %Y\ %R
-" Use a divider to separate the left side from the right side.
-set statusline+=%=
-" Status line right side.
-"set statusline+=\ ascii:\ %b\ \| row:\ %l\ col:\ %c\ \| percent:\ %p%%\ w:%{WordCount()}
-" show the status line
-set laststatus=2 " show the statusline
-
-" -----------------------------
-"set laststatus=2
-"set statusline=
-"set statusline+=%1*
-"set statusline+=\ 
-"set statusline+=%1*
-"set statusline+=\ 
-"set statusline+=%{b:gitbranch}
-"set statusline+=\ 
-"set statusline+=%3*
-"set statusline+=[
-"set statusline+=%1*
-"set statusline+=%F
-"set statusline+=%3*
-"set statusline+=]
-"set statusline+=%1*
-"set statusline+=\ 
-"set statusline+=>
-"set statusline+=%5*
-"set statusline+=\ 
-"set statusline+=%=
-"set statusline+=%6*
-"set statusline+=%6*
-"set statusline+=|
-"set statusline+=%5*
-"set statusline+=%l
-"set statusline+=%6*
-"set statusline+=/
-"set statusline+=%5*
-"set statusline+=%L
-"set statusline+=\ 
-"set statusline+=%c
-"set statusline+=%4*
-"set statusline+=%4*
-"set statusline+=%4*
-"set statusline+=%4*
-"set statusline+=|
-"set statusline+=\ 
-"hi User1 ctermbg=red ctermfg=black guibg=red guifg=black
-"hi User3 ctermbg=red ctermfg=darkred guibg=red guifg=darkred
-"hi User6 ctermbg=darkgray ctermfg=lightgray guibg=black guifg=lightgray
-"hi User5 ctermbg=darkgray ctermfg=white guibg=black guifg=white
-"hi User4 ctermbg=darkgray ctermfg=lightgray guibg=black guifg=lightgray
-"
-"function! StatuslineGitBranch()
-"  let b:gitbranch=""
-"  if &modifiable
-"    try
-"      let l:dir=expand('%:p:h')
-"      let l:gitrevparse = system("git -C ".l:dir." rev-parse --abbrev-ref HEAD")
-"      if !v:shell_error
-"        let b:gitbranch="(".substitute(l:gitrevparse, '\n', '', 'g').") "
-"      endif
-"    catch
-"    endtry
-"  endif
-"endfunction
-"
-"augroup GetGitBranch
-"  autocmd!
-"  autocmd VimEnter,WinEnter,BufEnter * call StatuslineGitBranch()
-"augroup END

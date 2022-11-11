@@ -25,7 +25,7 @@ c/settings.vim
 ```
 
 ## lang
-Language files (e.g. English).
+Language files for translations of vim. Uneeded for English.
 
 ## spell
 Spell checking files
