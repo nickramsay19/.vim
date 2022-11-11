@@ -126,6 +126,7 @@ cs[( - change surround "[" with "("
 * code folding
 * tabs
 * marks
+* trigger commands (e.g. make) on file edit
 
 ## More links (references + a few more links)
 https://devhints.io/vimscript
