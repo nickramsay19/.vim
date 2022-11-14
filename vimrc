@@ -2,15 +2,15 @@
 " Author: Nick Ramsay
 
 " --- HOUSEKEEPING ---
-set nocompatible " disable compatibility with vi
-set viminfo+=n~/.vim/viminfo " move .viminfo file to .vim dir
-let g:netrw_dirhistmax = 0 " disable .netrwhist
-set exrc " run any local .vimrc files 
-set secure " enable secure mode to limit usage of certain commands
+set nocompatible| " disable compatibility with vi
+set viminfo+=n~/.vim/viminfo| " move .viminfo file to .vim dir
+let g:netrw_dirhistmax = 0 |" disable .netrwhist
+set exrc| " run any local .vimrc files 
+set secure| " enable secure mode to limit usage of certain commands
 
 " --- FILETYPES ---
-filetype indent plugin on " enable ftplugin and filetype indent scripts
-set wildmenu " autocompletion
+filetype indent plugin on| " enable ftplugin and filetype indent scripts
+set wildmenu| " autocompletion
 " disable automatic comment line continuation
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -35,12 +35,12 @@ set backspace=indent,eol,start
 set ruler
 set showcmd
 set mouse=a
-set number " line numbers
+set number| " line numbers
 "set cursorline " show a horizontal line below the current editting line:
 "set cursorcolumn
 
 " --- KEYMAPS ---
-noremap o o<Esc> " exit insert mode to allow continual line adding
+noremap o o<Esc>| " exit insert mode to allow continual line adding
 noremap O O<Esc>
 noremap <C-o> i<Return><Esc> " insert new line at cursor
 
@@ -80,8 +80,7 @@ noremap H ^
 noremap L $
 
 " --- SPELL CHECKING ---
-" set language here
-let s:SPELLLANG = "en_au"
+let s:SPELLLANG = "en_au"| " set language here
 " create a function to reduce repetition
 function s:ConfigureTextualFile()
 	"  enable spellchecking for this file
@@ -98,10 +97,11 @@ autocmd FileType markdown call s:ConfigureTextualFile()
 " --- PLUGIN SETTINGS ---
 " - vim-easy-align
 packadd! vim-easy-align
-" Align table with tab
-au FileType markdown vmap <tab> :EasyAlign*<Bar><Enter>
-" For normal mode press bar '|'
-au FileType markdown map <Bar> vip :EasyAlign*<Bar><Enter>
+au FileType markdown vmap <tab> :EasyAlign*<Bar><Enter>| " Align table with tab
+au FileType markdown map <Bar> vip :EasyAlign*<Bar><Enter>| " For normal mode press bar '|'
+
+" - auto-pairs
+packadd! auto-pairs
 
 " - vim-airline
 packadd! vim-airline
