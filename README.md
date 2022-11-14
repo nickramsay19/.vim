@@ -8,3 +8,6 @@
 
 ## Sessions
 * I store all sessions in `.vim/Sessions`. This direcotry has been gitignored for obvious reasons.
+
+## Syntax files
+* All syntax files are taken from: http://ftp.vim.org/vim/runtime/syntax/

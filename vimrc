@@ -1,18 +1,23 @@
 " File: .vimrc
 " Author: Nick Ramsay
 
+" --- HOUSEKEEPING ---
+set nocompatible " disable compatibility with vi
+set viminfo+=n~/.vim/viminfo " move .viminfo file to .vim dir
+let g:netrw_dirhistmax = 0 " disable .netrwhist
+set exrc " run any local .vimrc files 
+set secure " enable secure mode to limit usage of certain commands
+
+" --- FILETYPES ---
+filetype indent plugin on " enable ftplugin and filetype indent scripts
+set wildmenu " autocompletion
+" disable automatic comment line continuation
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " --- COLORSCHEME ---
 set t_Co=256
 syntax on
 set termguicolors
-
-" --- FILETYPES ---
-" enable ftplugin and filetype indent scripts
-filetype indent plugin on
-" autocompletion
-set wildmenu
-" disable automatic comment line continuation
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " --- INDENTATION ---
 set tabstop=4
@@ -30,25 +35,14 @@ set backspace=indent,eol,start
 set ruler
 set showcmd
 set mouse=a
-" enable line numbers
-set number
-" show a horizontal line below the current editting line:
-"set cursorline
+set number " line numbers
+"set cursorline " show a horizontal line below the current editting line:
 "set cursorcolumn
 
-" --- HOUSEKEEPING ---
-" disable compatibility with vi
-set nocompatible
-" move .viminfo file to .vim dir
-set viminfo+=n~/.vim/viminfo
-" disable .netrwhist
-let g:netrw_dirhistmax = 0
-
 " --- KEYMAPS ---
-" replace o and O with add lines without insert (since I like to add multiple lines before I insert)
-noremap o o<Esc>
+noremap o o<Esc> " exit insert mode to allow continual line adding
 noremap O O<Esc>
-noremap <C-o> i<Return><Esc>
+noremap <C-o> i<Return><Esc> " insert new line at cursor
 
 " window splitting & resizing
 "noremap , :execute "vsplit ."
@@ -102,15 +96,18 @@ autocmd FileType markdown call s:ConfigureTextualFile()
 
 
 " --- PLUGIN SETTINGS ---
-" disable plugins
-let g:loaded_youcompleteme = 1
-let g:tabular_loaded = 1
-let g:loaded_supertab = 1
 " - vim-easy-align
+packadd! vim-easy-align
 " Align table with tab
 au FileType markdown vmap <tab> :EasyAlign*<Bar><Enter>
 " For normal mode press bar '|'
 au FileType markdown map <Bar> vip :EasyAlign*<Bar><Enter>
+
 " - vim-airline
 packadd! vim-airline
 
+" - supertab
+packadd! supertab
+
+" - vim-clang
+packadd! vim-clang
