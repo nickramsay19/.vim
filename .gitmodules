@@ -1,0 +1,23 @@
+[submodule "vim-nick-util"]
+	path = plugin/vim-nick-util
+	url = https://github.com/nickramsay19/vim-nick-util.git
+
+[submodule "auto-pairs"]
+	path = pack/plugin/opt/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+
+[submodule "supertab"]
+	path = pack/plugin/opt/supertab
+	url = https://github.com/ervandew/supertab.git
+
+[submodule "vim-airline"]
+	path = pack/plugin/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+
+[submodule "vim-clang"]
+	path = pack/plugin/opt/vim-clang
+	url = https://github.com/justmao945/vim-clang.git
+
+[submodule "vim-easy-align"]
+	path = pack/plugin/opt/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git 
