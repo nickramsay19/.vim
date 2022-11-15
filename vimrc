@@ -36,7 +36,7 @@ set ruler
 set showcmd
 set mouse=a
 set number| " line numbers
-"set cursorline " show a horizontal line below the current editting line:
+"set cursorline| " show a horizontal line below the current editting line
 "set cursorcolumn
 
 " --- KEYMAPS ---
@@ -44,16 +44,17 @@ noremap o o<Esc>| " exit insert mode to allow continual line adding
 noremap O O<Esc>
 noremap <C-o> i<Return><Esc> " insert new line at cursor
 
+" change B to back to last word end 
+noremap B be
+
 " window splitting & resizing
-"noremap , :execute "vsplit ."
-noremap <C-h> <Esc><C-w>h
-noremap <C-H> <Esc>10winc <
-noremap <C-L> <Esc>10winc >
+noremap <C-S-H> :10winc <<CR>| " reduce window width left
+noremap <C-S-L> :10winc ><CR>
 
 " don't copy after dd, replace old dd with cc (we will always still have "0C" which is the same as the old cc)
-"" this works by dd'ing into the "black-hole register" "_
+" this works by dd'ing into the "black-hole register" "_
 noremap dd "_dd
-"" now replace cc with the old (via noremap) dd
+" now replace cc with the old (via noremap) dd
 noremap cc dd
 
 " Delete some binds to help enforce good habits
@@ -81,17 +82,8 @@ noremap L $
 
 " --- SPELL CHECKING ---
 let s:SPELLLANG = "en_au"| " set language here
-" create a function to reduce repetition
-function s:ConfigureTextualFile()
-	"  enable spellchecking for this file
-	execute "set spell spelllang=" . s:SPELLLANG
-	" remap k and j to move down buffer lines not file lines
-	noremap <buffer> <silent> k gk
-	noremap <buffer> <silent> j gj
-endfunction
-" now run this function for any textual files
-autocmd FileType text call s:ConfigureTextualFile()
-autocmd FileType markdown call s:ConfigureTextualFile()
+autocmd FileType text call g:nickutil#ConfigureTextualFile(s:SPELLLANG)
+autocmd FileType markdown call g:nickutil#ConfigureTextualFile(s:SPELLLANG)
 
 
 " --- PLUGIN SETTINGS ---
