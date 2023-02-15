@@ -15,14 +15,16 @@ r - replace next character
 R - replace until escape pressed
 s - delete next char, enter insert mode
 S - delete line, enter insert mode (i.e. replaces this line with your text)
-ea - append to the end of current word (enter insert mode)
 A - insert at end of line
 I - insert at beginning of line
-ciw - replace word
+cw - replace word
 cw - replace until end of word
 c$ OR C- delete rest of line and insert
 c^ - delete line before cursor and insert
 J - delete newline at end of current line, jump to end of line
+gu - lower case
+gU - upper case
+~ - toggle case
 ## COPYING, PASTING AND DELETING
 y - copy
 c - cut

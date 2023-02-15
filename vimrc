@@ -45,17 +45,25 @@ noremap O O<Esc>
 noremap <C-o> i<Return><Esc> " insert new line at cursor
 
 " change B to back to last word end 
-noremap B be
+" not quite working yet
+"noremap B be
 
 " window splitting & resizing
 noremap <C-S-H> :10winc <<CR>| " reduce window width left
 noremap <C-S-L> :10winc ><CR>
+noremap <C-S-K> :res +5<CR>
+noremap <C-S-J> :res -5<CR>
 
 " don't copy after dd, replace old dd with cc (we will always still have "0C" which is the same as the old cc)
 " this works by dd'ing into the "black-hole register" "_
 noremap dd "_dd
 " now replace cc with the old (via noremap) dd
 noremap cc dd
+
+" allow moving lines up and down with one keybind
+" NOTE: i'm using noremap so i must use dd even though i have changed dd
+noremap <C-j> ddjP
+noremap <C-k> ddkP
 
 " Delete some binds to help enforce good habits
 " un-bind arrow keys
@@ -84,7 +92,6 @@ noremap L $
 let s:SPELLLANG = "en_au"| " set language here
 autocmd FileType text call g:nickutil#ConfigureTextualFile(s:SPELLLANG)
 autocmd FileType markdown call g:nickutil#ConfigureTextualFile(s:SPELLLANG)
-
 
 " --- PLUGIN SETTINGS ---
 " - vim-easy-align
