@@ -2,6 +2,7 @@
 # remove files with personal information
 Sessions/
 viminfo
+viminfo.*
 debuglog
 
 # don't upload all language files to git
