@@ -4,6 +4,9 @@ Sessions/
 viminfo
 debuglog
 
+# don't upload all language files to git
+spell/*.add
+spell/*.add.spl
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,vim,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,vim,linux
