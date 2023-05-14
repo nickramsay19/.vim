@@ -52,9 +52,8 @@ imap jk <Esc> " quick jk maps to esc
 nmap ; :
 noremap ;; ;
 
-" change B to back to last word end 
-" not quite working yet :(
-"noremap B be
+" change B to go back to last word end 
+noremap B lbbe
 
 " no copy dd 
 " replace old dd with cc (we will always still have "0C" which is the same as the old cc)
